@@ -1,0 +1,390 @@
+.<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+
+    <script src="index.js"></script>
+
+    <title>Macanazos Sabrocena 2018</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row titulo">
+        <div class="col-sm-12 text-center">
+          <h1 class="display-4">Bienvenidos a los Macanazos Sabrocena edición "2019"</h1>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/colgate.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Colgate</h5>
+              <p>La mejor sonrisa</p>
+              <a href="colgate.html" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/vogue.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Vogue</h5>
+              <p>La que mejor se viste</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/ozuna.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Ozuna</h5>
+              <p>El que mejor se viste</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/pantene.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Pantene</h5>
+              <p>Mejor cabello</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/perico.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Perico callatelocico</h5>
+              <p>Ya callate alv no mms</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/indio.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Indio de los finos</h5>
+              <p>Es fresa pero sobrevive en el centro</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/chavo.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Chavo del 8</h5>
+              <p>Es que no le tienen paciencia :(</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/gei.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Gayshippings</h5>
+              <p>Mejor gay couple ship</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/lesbian.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Lesbianshippings</h5>
+              <p>Mejor lesbian couple ship</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/straight.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Heteroshippings</h5>
+              <p>Mejor pareja</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/pan.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Más bueno que el pan</h5>
+              <p>Eres bien buena (persona)</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/cagon.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Cagón</h5>
+              <p>Eres bien malo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/otaku.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">El Naruto</h5>
+              <p>Pinche otako no mms bañate alv</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/wikipedia.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Wikipedia</h5>
+              <p>Aca bien sabiondo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/codo.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">El codo</h5>
+              <p>Eres bien codo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/diva.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Diva</h5>
+              <p>El Alexis siono raza</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/borracho.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Hijoesuchingadamadre</h5>
+              <p>Más borracho</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/master.PNG" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Yago</h5>
+              <p>Aca bien cizañoso</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/luisito.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Luisito 2.0</h5>
+              <p>El sucesor de Luisito</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/galindo.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Muy Bien</h5>
+              <p>Favorito de Galindo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/nerd.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Alejate Nerd</h5>
+              <p>Má bulleado :(</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/barbie.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Barbie</h5>
+              <p>Más buapa</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/ken.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Ken</h5>
+              <p>Más buapo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/master.PNG" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Te diré master</h5>
+              <p>Más chismoso</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/mentiras.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">*Caer en sus mentiras :'(*</h5>
+              <p>Mejor actriz</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/momoringo.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Momoringo</h5>
+              <p>Siempre te hace reir</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Taco de frijol con salsa</h5>
+              <p>Más buen pedo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/4x4.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">4x4</h5>
+              <p>Le entra a todo</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/trinidad.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Mejor trinidad</h5>
+              <p>Porque pss hay varias</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/bff.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Bff</h5>
+              <p>Siempre está ahí para ti</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona persona" src="img/categorias/fresita.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Rosita fresita</h5>
+              <p>Pss que es bien fresa ilv</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/palos.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">El palos</h5>
+              <p>Siempre quieres pleito alv</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/unica.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">"Eres la única lo juro"</h5>
+              <p>Mejor actor</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/sierra.png" style="width: 120px;" alt="Card image cap">
+            <div class="card-body persona-info">
+              <h5 class="card-title">Jaime Sierra</h5>
+              <p>Mejor persona en todos los sentidos alv</p>
+              <a href="#" class="btn btn-primary">Ir a votar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

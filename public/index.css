@@ -1,0 +1,63 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("img/curtain.png");
+  background-color: #505050;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1, h2{
+  color: white;
+  font-family: 'Staatliches', cursive;
+  text-shadow:
+	1px 1px 0 #CCC,
+	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+	3px 3px 0 #444,
+	4px 4px 0 #444,
+	5px 5px 0 #444,
+	6px 6px 0 #444; /* end of 4 level deep dark shadow */
+}
+
+.row{
+  padding-bottom: 80px;
+}
+
+.card{
+  transition: all .3s ease-in-out;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+}
+
+.persona{
+  margin: -70px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.persona-info{
+  margin-top: 80px;
+}
+
+.titulo{
+  padding-bottom: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    margin-bottom: 80px;
+  }
+  .row{
+    padding-bottom: 0;
+  }
+  .titulo{
+    padding-bottom: 80px;
+  }
+}
