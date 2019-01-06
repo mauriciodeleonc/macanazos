@@ -69,9 +69,21 @@ for(var i = 0; i < nombres.length; i++){
   firebase.database().ref().update(updates);
 }
 
+function disableButtons(){
+  var endDate = new Date(2018,0,11,1,30);
+  var endMinutes = endDate.getMinutes();
+  var startDate = new Date();
+  var startMinutes = startDate.getMinutes();
+  console.log(endDate.getMinutes() - startDate.getMinutes());
+  if(endDate.getMinutes() - startDate.getMinutes() <= 0){
+    $('.boton').addClass('disabled');
+    console.log("están bloqueados ajua");
+  } else {
+    console.log("no se bloquean paps");
+  }
+}
 
-
-firebase.database().ref('macanazos/' + macanazo[i]).once('value').then(function(snapshot) {
+/*firebase.database().ref('macanazos/' + macanazo[i]).once('value').then(function(snapshot) {
   //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
   console.log(users);
-});
+});*/
