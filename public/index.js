@@ -1,4 +1,4 @@
-var config = {
+/*var config = {
   apiKey: "AIzaSyAzy2VI0e2LnOes8kUS-myPVKmXs-Wg3A8",
   authDomain: "macanazos-c3a7b.firebaseapp.com",
   databaseURL: "https://macanazos-c3a7b.firebaseio.com",
@@ -65,11 +65,37 @@ var fotos = [
   "img/personas/alec.png"
 ];
 
+var correos = [
+  "mauricio.deleonc@udem.edu",
+  "fernando.desilva23@gmail.com",
+  "arturo.balli@udem.edu",
+  "gonziegr01@gmail.com",
+  "mara.castro@udem.edu",
+  "ana.gomeza@udem.edu",
+  "eugenia.valdes@udem.edu",
+  "liten?",
+  "shady.reinoso@udem.edu",
+  "alexis.olvera@udem.edu",
+  "lioz4jl@gmail.com",
+  "prodrigomb@gmail.com",
+  "rafael.gonzalezg94@gmail.com",
+  "asofialu@gmail.com",
+  "wayosalas@hotmail.com",
+  "ana.pena@udem.edu",
+  "meribah.guerra@udem.edu",
+  "angelica.anaya@udem.edu",
+  "diana.muzquiz@udem.edu",
+  "ana.arzamendi@udem.edu",
+  "marcela.ruiz@udem.edu",
+  "alecdlg.ap@gmai.com"
+];
+
 for(var i = 0; i < nombres.length; i++){
   // A post entry.
   var postData = {
     username: nombres[i],
-    profile_picture: fotos[i]
+    profile_picture: fotos[i],
+    email: correos[i]
   };
 
   // Write the new post's data simultaneously in the posts list and the user's post list.
@@ -77,4 +103,4 @@ for(var i = 0; i < nombres.length; i++){
   updates['users/' + nombres[i]] = postData;
 
   firebase.database().ref().update(updates);
-}
+}*/

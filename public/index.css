@@ -21,11 +21,13 @@ h1, h2{
 	5px 5px 0 #444,
 	6px 6px 0 #444; /* end of 4 level deep dark shadow */
 }
-
 .row{
   padding-bottom: 80px;
 }
 
+.modal-row{
+  padding-bottom: 0px;
+}
 .card{
   transition: all .3s ease-in-out;
   margin: 10px 0 10px 0;
@@ -59,5 +61,8 @@ h1, h2{
   }
   .titulo{
     padding-bottom: 80px;
+  }
+  .modal-button{
+    margin-bottom: 10px;
   }
 }
