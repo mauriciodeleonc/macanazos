@@ -17,7 +17,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
 
     <script src="index.js"></script>
-
+    <script src="macanazos.js"></script>
     <title>Colgate | Macanazos Sabrocena 2018</title>
   </head>
   <body>
@@ -83,7 +83,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/mau.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Mauricio</h5>
-              <a href="#" class="btn btn-primary boton" role="button" onclick="disableButtons()">Nominar</a>
+              <a href="#" onclick="votar('mau','colgate')" class="btn btn-primary boton" role="button" onclick="disableButtons()">Nominar</a>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/fer.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Fer</h5>
-              <a href="#" class="btn btn-primary boton" role="button">Nominar</a>
+              <a href="#" onclick="votar('fer','colgate')" class="btn btn-primary boton" role="button">Nominar</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/balli.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Balli</h5>
-              <a href="#" class="btn btn-primary boton" role="button">Nominar</a>
+              <a href="#" onclick="votar('balli','colgate')" class="btn btn-primary boton" role="button">Nominar</a>
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
-      window.onload=disableButtons();
+      //window.onload=disableButtons();
     </script>
   </body>
 </html>
