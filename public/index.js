@@ -17,42 +17,52 @@ var storage = firebase.storage();
 var database = firebase.database();
 
 var nombres = [
-  "Mau De León",
-  "Fer De Silva",
-  "Arturo Balli",
-  "Gonzalo Garza",
-  "Mara Castro",
-  "Ana Iris",
-  "Eugenia Valdes",
-  "Liten Paulina",
-  "Shady Mohammed",
-  "Alexis Ilizaliturri",
-  "Leonardo Nerio",
-  "Paul Morales",
-  "Rafa Gonzalez",
-  "Sofi Leyva",
-  "Eduardo 'Wayo' Salas",
-  "Sofi Peña",
-  "Dante González"];
+  "mau",
+  "fer",
+  "balli",
+  "gonzi",
+  "mara",
+  "iris",
+  "euge",
+  "liten",
+  "shady",
+  "alexis",
+  "leo",
+  "paul",
+  "rafa",
+  "sofil",
+  "wayo",
+  "sofip",
+  "meribah",
+  "angie",
+  "diana",
+  "anak",
+  "marce",
+  "alec"];
 
 var fotos = [
-  "gs://macanazos-c3a7b.appspot.com/personas/mau.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/fer.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/balli.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/gonzi.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/mara.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/iris.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/euge.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/liten.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/shady.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/alexis.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/leo.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/paul.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/rafa.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/sofil.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/wayo.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/sofip.png",
-  "gs://macanazos-c3a7b.appspot.com/personas/dante.png",
+  "img/personas/mau.png",
+  "img/personas/fer.png",
+  "img/personas/balli.png",
+  "img/personas/gonzi.png",
+  "img/personas/mara.png",
+  "img/personas/iris.png",
+  "img/personas/euge.png",
+  "img/personas/liten.png",
+  "img/personas/shady.png",
+  "img/personas/alexis.png",
+  "img/personas/leo.png",
+  "img/personas/paul.png",
+  "img/personas/rafa.png",
+  "img/personas/sofil.png",
+  "img/personas/wayo.png",
+  "img/personas/sofip.png",
+  "img/personas/meribah.png",
+  "img/personas/angie.png",
+  "img/personas/diana.png",
+  "img/personas/anak.png",
+  "img/personas/marce.png",
+  "img/personas/alec.png"
 ];
 
 for(var i = 0; i < nombres.length; i++){
@@ -68,22 +78,3 @@ for(var i = 0; i < nombres.length; i++){
 
   firebase.database().ref().update(updates);
 }
-
-function disableButtons(){
-  var endDate = new Date(2018,0,11,1,30);
-  var endMinutes = endDate.getMinutes();
-  var startDate = new Date();
-  var startMinutes = startDate.getMinutes();
-  console.log(endDate.getMinutes() - startDate.getMinutes());
-  if(endDate.getMinutes() - startDate.getMinutes() <= 0){
-    $('.boton').addClass('disabled');
-    console.log("están bloqueados ajua");
-  } else {
-    console.log("no se bloquean paps");
-  }
-}
-
-/*firebase.database().ref('macanazos/' + macanazo[i]).once('value').then(function(snapshot) {
-  //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-  console.log(users);
-});*/
