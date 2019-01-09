@@ -1,4 +1,4 @@
-/*var config = {
+var config = {
   apiKey: "AIzaSyAzy2VI0e2LnOes8kUS-myPVKmXs-Wg3A8",
   authDomain: "macanazos-c3a7b.firebaseapp.com",
   databaseURL: "https://macanazos-c3a7b.firebaseio.com",
@@ -8,12 +8,8 @@
 };
 firebase.initializeApp(config);
 
-
-console.log("smn");
-
 var storage = firebase.storage();
 
-// Get a reference to the database service
 var database = firebase.database();
 
 var nombres = [
@@ -38,7 +34,8 @@ var nombres = [
   "diana",
   "anak",
   "marce",
-  "alec"];
+  "alec"
+];
 
 var fotos = [
   "img/personas/mau.png",
@@ -90,6 +87,15 @@ var correos = [
   "alecdlg.ap@gmai.com"
 ];
 
+function login() {
+  const email = $("#email").val()
+  const pass = $("#pass").val()
+  firebase.auth().signInWithEmailAndPassword(email, pass).then(function(){
+    window.open("menu.html", "_self")
+  }).catch(e => console.log(e.message));  
+}
+
+/*
 for(var i = 0; i < nombres.length; i++){
   // A post entry.
   var postData = {
