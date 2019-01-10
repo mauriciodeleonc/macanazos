@@ -21,6 +21,9 @@ h1, h2{
 	5px 5px 0 #444,
 	6px 6px 0 #444; /* end of 4 level deep dark shadow */
 }
+h3{
+  font-family: 'Staatliches', cursive;
+}
 .row{
   padding-bottom: 80px;
 }
@@ -64,5 +67,8 @@ h1, h2{
   }
   .modal-button{
     margin-bottom: 10px;
+  }
+  .boton-pareja{
+    margin-bottom: 20px;
   }
 }
