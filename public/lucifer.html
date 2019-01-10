@@ -3,33 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-
-    <!-- Firebase App is always required and must be first -->
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
-
-    <!-- include only the Firebase features as you need -->
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
-    
-    <title>Galactus "el debora mundos" | Macanazos Sabrocena 2018</title>
+    <title>Lucifer | Macanazos Sabrocena 2018</title>
   </head>
   <body>
     <div class="container">
       <div class="row titulo">
         <div class="col-sm-12 text-center">
-          <h1 class="display-4">Galctus "el debora mundos"</h1>
-          <h2>Le entra a todo</h2>
+          <h1 class="display-4">Lucifer</h1>
+          <h2>Eres bien ogt (Pero caes chido siono raza)</h2>
         </div>
       </div>
       <div class="row justify-content-around">
         <div class="col-sm-12 col-md-4">
           <div class="card text-center ganador">
-            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/4x4.png" style="width: 120px;" alt="Card image cap">
+            <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/categorias/lucifer.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Ganador</h5>
               <p>Proximamente</p>
@@ -43,7 +33,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/question.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Nominado 1</h5>
-              <button type="button" class="btn btn-primary" disabled>Votar</button>
+              <a href="#" class="btn btn-primary boton" role="button">Votar</a>
             </div>
           </div>
         </div>
@@ -52,7 +42,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/question.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Nominado 2</h5>
-              <button type="button" class="btn btn-primary" disabled>Votar</button>
+              <a href="#" class="btn btn-primary boton" role="button">Votar</a>
             </div>
           </div>
         </div>
@@ -61,7 +51,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/question.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Nominado 3</h5>
-              <button type="button" class="btn btn-primary" disabled>Votar</button>
+              <a href="#" class="btn btn-primary boton" role="button">Votar</a>
             </div>
           </div>
         </div>
@@ -70,19 +60,18 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/question.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Nominado 4</h5>
-              <button type="button" class="btn btn-primary" disabled>Votar</button>
+              <a href="#" class="btn btn-primary boton" role="button">Votar</a>
             </div>
           </div>
         </div>
       </div>
-
       <div class="row justify-content-around">
         <div class="col">
           <div class="card text-center">
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/mau.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Mauricio</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('mau','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('mau','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -91,7 +80,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/fer.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Fer</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('fer','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('fer','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -100,7 +89,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/balli.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Balli</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('balli','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('balli','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -109,7 +98,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/alexis.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Alexis</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('alexis','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('alexis','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -118,7 +107,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/euge.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Eugenia</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('eugenia','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('eugenia','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -127,7 +116,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/sofil.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Sofi Leyva</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('sofil','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('sofil','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -138,7 +127,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/iris.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Ana Iris</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('iris','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('iris','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -147,7 +136,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/mara.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Mara</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('mara','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('mara','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -156,7 +145,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/wayo.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Wayo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('wayo','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('wayo','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -165,7 +154,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/gonzi.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Gonzalo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('gonzi','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('gonzi','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -174,7 +163,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/shady.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Shady</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('shady','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('shady','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -183,7 +172,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/sofip.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Sofi Peña</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('sofip','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('sofip','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -194,7 +183,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/rafa.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Rafa</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('rafa','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('rafa','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -203,7 +192,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/paul.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Paul</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('paul','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('paul','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -212,7 +201,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/leo.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Leo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('leo','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('leo','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -221,7 +210,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/liten.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Paulina</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('liten','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('liten','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -230,7 +219,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/meribah.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Meribah</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('meribah','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('meribah','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -241,7 +230,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/angie.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Angie</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('angie','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('angie','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -250,7 +239,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/anak.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Ana Karen</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('anak','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('anak','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -259,7 +248,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/marce.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Marce</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('marce','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('marce','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -268,7 +257,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/diana.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Diana</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('diana','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('diana','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
@@ -277,61 +266,61 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/alec.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Alec</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('alec','galactus')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="votar('alec','lucifer')" data-toggle="modal" data-target="#exampleModalCenter">Nominar</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Gei ass, gracias por nominar a tu TITS ASS MODERFOKERNIGABICH favorito, te tqm
-          </div>
-          <div class="modal-footer">
-            <div class="row modal-row">
-              <div class="col">
-                <a href="menu.html" class="btn btn-outline-secondary modal-button" role="button">Regresar al menú principal</a>
-              </div>
-              <div class="col">
-                <a href="palos.html" class="btn btn-primary modal-button" role="button">Ir al siguiente macanazo</a>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content text-center">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Gei ass, gracias por nominar a tu TITS ASS MODERFOKERNIGABICH favorito, te tqm
+            </div>
+            <div class="modal-footer">
+              <div class="row modal-row">
+                <div class="col">
+                  <a href="menu.html" class="btn btn-outline-secondary modal-button" role="button">Regresar al menú principal</a>
+                </div>
+                <div class="col">
+                  <a href="momoringo.html" class="btn btn-primary modal-button" role="button">Ir al siguiente macanazo</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
-    <script src="./index.js"></script>
-    <script src="./macanazos.js"></script>
-    <script>
-      firebase.auth().onAuthStateChanged(function(user){
-        if(user){
-          var voto = false;
-          var macanazo = window.location.href.substring(57);
-          macanazo = macanazo.substring(0, macanazo.length - 5)
-          firebase.database().ref("/macanazos/"+macanazo+"/votantes").once("value", function(snap){
-            snap.forEach(function(child) {
-              if(child.val() == firebase.auth().currentUser.email) voto = true;
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+      <script src="./index.js"></script>
+      <script src="./macanazos.js"></script>
+      <script>
+        firebase.auth().onAuthStateChanged(function(user){
+          if(user){
+            var voto = false;
+            var macanazo = window.location.href.substring(57);
+            macanazo = macanazo.substring(0, macanazo.length - 5)
+            firebase.database().ref("/macanazos/"+macanazo+"/votantes").once("value", function(snap){
+              snap.forEach(function(child) {
+                if(child.val() == firebase.auth().currentUser.email) voto = true;
+              });
+            }).then(function(){
+              if(voto) $(".btn-primary").remove()
             });
-          }).then(function(){
-            if(voto) $(".btn-primary").remove()
-          });
-        }else {
-          window.open("index.html", "_self")
-        }
-      });
-    </script>
-  </body>
-</html>
+          }else {
+            window.open("index.html", "_self")
+          }
+        });
+      </script>
+    </body>
+  </html>

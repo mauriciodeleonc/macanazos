@@ -1,4 +1,4 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
         <div class="col-sm-12 text-center">
           <h1 class="display-4">Gayshippings</h1>
           <h2>Mejor gay couple ship</h2>
-          <h3 class="text-white">Este macanazo jala diferente, nominas a dos personas y luego te vas hasta abajo y le das click en "Nominar pareja"</h3>
+          <h3 class="text-white">Este macanazo jala diferente, le picas a nominar a dos personas y luego te vas hasta abajo y le das click en "Nominar pareja"</h3>
         </div>
       </div>
       <div class="row justify-content-around">
@@ -110,7 +110,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/balli.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Balli</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('balli')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('balli')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/alexis.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Alexis</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('alexis','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('alexis')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/alec.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Alec</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('alec','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('alec')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/rafa.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Rafa</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('rafa','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('rafa')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/paul.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Paul</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('paul','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('paul')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/leo.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Leo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('leo','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('leo')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/wayo.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Wayo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('wayo','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('wayo')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/gonzi.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Gonzalo</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('gonzi','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('gonzi')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
             <img class="card-img-top mx-auto d-block rounded-circle persona" src="img/personas/shady.png" style="width: 120px;" alt="Card image cap">
             <div class="card-body persona-info">
               <h5 class="card-title">Shady</h5>
-              <button type="button" class="btn btn-primary boton" onclick="votar('shady','gay')"  >Nominar</button>
+              <button type="button" class="btn btn-primary boton" onclick="select('shady')"  >Nominar</button>
             </div>
           </div>
         </div>
@@ -213,6 +213,9 @@
             <div class="row modal-row">
               <div class="col">
                 <a href="menu.html" class="btn btn-outline-secondary modal-button" role="button">Regresar al menú principal</a>
+              </div>
+              <div class="col">
+                <a href="lesbian.html" class="btn btn-primary modal-button" role="button">Ir al siguiente macanazo</a>
               </div>
             </div>
           </div>
@@ -252,8 +255,11 @@
         console.log(n2)
       }
 
+
       function nominarPareja() {
-        votar(n1+"+"+n2, "gay");
+        var junto = [n1,n2];
+        var parejas = junto.sort();
+        votar(parejas[0]+parejas[1], "gay");
       }
     </script>
   </body>
